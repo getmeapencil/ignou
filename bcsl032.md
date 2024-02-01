@@ -1,5 +1,5 @@
+**1. Write a C++ program to create an `Account` class to manage the savings account of a bank. Define methods `display_balance()` and `withdraw()` in the `Account` class. Also, define a friend function `display_info()` to display basic information of the account holder. Use appropriate data types for data members and utilize proper access specifiers in your program. Make necessary assumptions.**
 
-1. **Write a C++ program to create an `Account` class to manage the savings account of a bank. Define methods `display_balance()` and `withdraw()` in the `Account` class. Also, define a friend function `display_info()` to display basic information of the account holder. Use appropriate data types for data members and utilize proper access specifiers in your program. Make necessary assumptions.**
 ```c++
 #include <iostream>
 #include <string>
@@ -12,7 +12,7 @@ private:
 
 public:
     // Constructor
-    Account(const std::string& name, long number, double initialBalance) 
+    Account(const std::string& name, long number, double initialBalance)
         : accountHolderName(name), accountNumber(number), balance(initialBalance) {}
 
     // Method to display account balance
@@ -59,7 +59,8 @@ int main() {
 
 ```
 
-2. **Write a C++ program to create an `Array` class. This class should have an array of integers as its data member. Define appropriate constructor and destructor for this class. Define a method `Find_Element()` to find a given value in the `Array` object. Define a method `Average()` to find the average of array elements in the `Array` object.**
+**2. Write a C++ program to create an `Array` class. This class should have an array of integers as its data member. Define appropriate constructor and destructor for this class. Define a method `Find_Element()` to find a given value in the `Array` object. Define a method `Average()` to find the average of array elements in the `Array` object.**
+
 ```c++
 #include <iostream>
 
@@ -132,7 +133,8 @@ int main() {
 
 ```
 
-3. **Write a C++ program to find the factorial of a given number. Define a `Factorial` class and include `read_Number()` and `display_Factorial()` methods in the `Factorial` class. Use appropriate access specifiers in your program. Also, make provision for exception handling.**
+**3. Write a C++ program to find the factorial of a given number. Define a `Factorial` class and include `read_Number()` and `display_Factorial()` methods in the `Factorial` class. Use appropriate access specifiers in your program. Also, make provision for exception handling.**
+
 ```c++
 #include <iostream>
 #include <stdexcept>
@@ -188,7 +190,8 @@ int main() {
 
 ```
 
-4. **Write a C++ program to create a `Student` class. Define a constructor and a `display()` method to display student information. Derive a `Working_Student` class from the `Student` class. Also, override the `display()` method of the `Student` class in the `Working_Student` class. Make necessary assumptions and use appropriate data types for data members of both classes.**
+**4. Write a C++ program to create a `Student` class. Define a constructor and a `display()` method to display student information. Derive a `Working_Student` class from the `Student` class. Also, override the `display()` method of the `Student` class in the `Working_Student` class. Make necessary assumptions and use appropriate data types for data members of both classes.**
+
 ```c++
 #include <iostream>
 #include <string>
@@ -252,7 +255,8 @@ int main() {
 
 ```
 
-5. **Write a C++ program to copy the contents of a given file into a new file.**
+**5. Write a C++ program to copy the contents of a given file into a new file.**
+
 ```c++
 #include <iostream>
 #include <fstream>
@@ -304,7 +308,8 @@ int main() {
 
 ```
 
-6. **Write a C++ program to create a `Book` class. Define a method `Display_Book_Detail()` to display the book details such as title, author, publisher, price, and edition. Define appropriate constructor(s) in your program.**
+**6. Write a C++ program to create a `Book` class. Define a method `Display_Book_Detail()` to display the book details such as title, author, publisher, price, and edition. Define appropriate constructor(s) in your program.**
+
 ```c++
 #include <iostream>
 #include <string>
@@ -347,7 +352,8 @@ int main() {
 
 ```
 
-7. **Write a C++ program to create an abstract class `Shape` with a method `area()`. Derive `Circle` and `Triangle` classes from the `Shape` class. Override the `area()` method in the derived classes to find the area of respective shapes. Also, define appropriate constructors in your program. Make necessary assumptions required.**
+**7. Write a C++ program to create an abstract class `Shape` with a method `area()`. Derive `Circle` and `Triangle` classes from the `Shape` class. Override the `area()` method in the derived classes to find the area of respective shapes. Also, define appropriate constructors in your program. Make necessary assumptions required.**
+
 ```c++
 #include <iostream>
 #include <cmath>
@@ -412,7 +418,8 @@ int main() {
 
 ```
 
-9. **Write a C++ program to find the factorial of a given number. Define a proper class, constructor, and methods in your program.**
+**8. Write a C++ program to find the factorial of a given number. Define a proper class, constructor, and methods in your program.**
+
 ```c++
 #include <iostream>
 
@@ -468,7 +475,8 @@ int main() {
 
 ```
 
-10. **Write a C++ program to create a `Time` class. Define a constructor to create a time object in a 12-hour format. Define a method to convert the time into 24-hour format and display it.**
+**9. Write a C++ program to create a `Time` class. Define a constructor to create a time object in a 12-hour format. Define a method to convert the time into 24-hour format and display it.**
+
 ```c++
 #include <iostream>
 
@@ -511,7 +519,8 @@ int main() {
 
 ```
 
-12. **Write a C++ program to define a `Shape` class. Derive `Circle` and `Triangle` classes from the `Shape` class. Define a method `area()` in the `Shape` class and override it in classes `Circle` and `Triangle` to calculate their area. Make necessary assumptions required.**
+**10. Write a C++ program to define a `Shape` class. Derive `Circle` and `Triangle` classes from the `Shape` class. Define a method `area()` in the `Shape` class and override it in classes `Circle` and `Triangle` to calculate their area. Make necessary assumptions required.**
+
 ```c++
 #include <iostream>
 #include <cmath>
@@ -588,7 +597,8 @@ int main() {
 
 ```
 
-13. **Write a C++ program to create a `Matrix` class. Define a constructor to create a 3 x 3 matrix. Overload the `+` operator to add two matrices.**
+**11. Write a C++ program to create a `Matrix` class. Define a constructor to create a 3 x 3 matrix. Overload the `+` operator to add two matrices.**
+
 ```c++
 #include <iostream>
 
@@ -651,7 +661,8 @@ int main() {
 
 ```
 
-14. **Write a C++ program to create a `Matrix` class. Define a constructor to create a 3 x 3 matrix. Define a method to display the sum of diagonal elements of the matrix.**
+**12. Write a C++ program to create a `Matrix` class. Define a constructor to create a 3 x 3 matrix. Define a method to display the sum of diagonal elements of the matrix.**
+
 ```c++
 #include <iostream>
 
@@ -705,7 +716,8 @@ int main() {
 
 ```
 
-15. **Write a C++ program to define a `Number` class. Define a constructor for this class. Implement a method to check whether the number is even or odd. Also, define a method to find the factorial of the number.**
+**13. Write a C++ program to define a `Number` class. Define a constructor for this class. Implement a method to check whether the number is even or odd. Also, define a method to find the factorial of the number.**
+
 ```c++
 #include <iostream>
 
@@ -756,7 +768,8 @@ int main() {
 }
 ```
 
-16. **Write a C++ program to define a `Player` class. Define a constructor and a method `display_info()` in this class. Inherit `Cricket_Player` and `Football_Player` from the `Player` class and override the `display_info()` method of the `Player` class in derived classes. Make necessary assumptions required.**
+**14. Write a C++ program to define a `Player` class. Define a constructor and a method `display_info()` in this class. Inherit `Cricket_Player` and `Football_Player` from the `Player` class and override the `display_info()` method of the `Player` class in derived classes. Make necessary assumptions required.**
+
 ```c++
 #include <iostream>
 #include <string>
@@ -840,7 +853,8 @@ int main() {
 
 ```
 
-17. **Write a C++ program to overload the `+` operator so that any two complex numbers can be added using it. Define a proper class, constructor, and methods in your program. Make necessary assumptions required.**
+**15. Write a C++ program to overload the `+` operator so that any two complex numbers can be added using it. Define a proper class, constructor, and methods in your program. Make necessary assumptions required.**
+
 ```c++
 #include <iostream>
 
@@ -886,7 +900,8 @@ int main() {
 
 ```
 
-18. **Write a C++ program to create an `Account` class to manage Savings Bank Account. Define a constructor for this class. Define a method to display the account details, including the current balance in the account. Also, define and implement a friend function to calculate simple interest. Make necessary assumptions required.**
+**16. Write a C++ program to create an `Account` class to manage Savings Bank Account. Define a constructor for this class. Define a method to display the account details, including the current balance in the account. Also, define and implement a friend function to calculate simple interest. Make necessary assumptions required.**
+
 ```c++
 #include <iostream>
 #include <cmath>
@@ -944,7 +959,8 @@ int main() {
 
 ```
 
-19. **Write a C++ program to display the marks scored by a student in the final semester examination. The student appears in exams for Math, Science, Hindi, English, and Computer Application courses in the final semester. Each course is of 100 marks. Define a proper class, constructor, and method(s) in your program. Make necessary assumptions required.**
+**17. Write a C++ program to display the marks scored by a student in the final semester examination. The student appears in exams for Math, Science, Hindi, English, and Computer Application courses in the final semester. Each course is of 100 marks. Define a proper class, constructor, and method(s) in your program. Make necessary assumptions required.**
+
 ```c++
 #include <iostream>
 #include <iomanip>
@@ -987,7 +1003,8 @@ int main() {
 
 ```
 
-21. **Write a C++ program to define an `Account` class. Derive classes `Saving_Account` and `Current_Account` from the `Account` class. Define proper constructors for all three classes. Define methods to display account details and account balance.**
+**18. Write a C++ program to define an `Account` class. Derive classes `Saving_Account` and `Current_Account` from the `Account` class. Define proper constructors for all three classes. Define methods to display account details and account balance.**
+
 ```c++
 #include <iostream>
 #include <string>
@@ -1073,10 +1090,11 @@ int main() {
 
 ```
 
-22. **Write a C++ program to create a `Book` class. Define a proper constructor for the `Book` class. Define methods to do the following:**
-   **(a) Display the price of the book.**
-   **(b) Display the name(s) of the author(s) of the book.**
-   **(c) Display the ISBN number of the book.**
+**19. Write a C++ program to create a `Book` class. Define a proper constructor for the `Book` class. Define methods to do the following:**
+**(a) Display the price of the book.**
+**(b) Display the name(s) of the author(s) of the book.**
+**(c) Display the ISBN number of the book.**
+
 ```c++
 #include <iostream>
 #include <string>
@@ -1123,7 +1141,8 @@ int main() {
 
 ```
 
-20. **Write a C++ program to create an `Account` class. Define a proper constructor for this class. Define methods for `display_account_detail` and `display_simple_interest`. Make necessary assumptions required.**
+**20. Write a C++ program to create an `Account` class. Define a proper constructor for this class. Define methods for `display_account_detail` and `display_simple_interest`. Make necessary assumptions required.**
+
 ```c++
 #include <iostream>
 #include <iomanip>
