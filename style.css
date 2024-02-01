@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
 body {
   height: 100vh;
   display: grid;
@@ -25,4 +33,13 @@ footer {
   padding: 5px;
   font-size: x-small;
   text-align: center;
+}
+
+#markdown-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
