@@ -1475,3 +1475,125 @@ int main() {
 ```
 
 ---
+
+# Viva
+
+1. **What is a data structure?**
+
+   - **Answer:** A data structure is a way of organizing and storing data to perform operations efficiently.
+
+2. **Differentiate between an array and a linked list.**
+
+   - **Answer:** An array is a collection of elements of the same data type stored in contiguous memory, while a linked list is a collection of elements (nodes) where each node points to the next one.
+
+3. **Explain the concept of time complexity.**
+
+   - **Answer:** Time complexity measures the amount of time an algorithm takes concerning the input size. It provides an estimate of the maximum running time as a function of the input size.
+
+4. **What is the significance of Big-O notation in algorithms?**
+
+   - **Answer:** Big-O notation describes the upper bound on the growth rate of an algorithm's running time in terms of the input size. It helps in analyzing and comparing the efficiency of algorithms.
+
+5. **Define a stack and explain its operations.**
+
+   - **Answer:** A stack is a data structure that follows the Last In, First Out (LIFO) principle. It supports two primary operations: push (to add an element) and pop (to remove the top element).
+
+6. **Describe the difference between BFS and DFS.**
+
+   - **Answer:** BFS (Breadth-First Search) explores a graph level by level, while DFS (Depth-First Search) explores as far as possible along one branch before backtracking.
+
+7. **What is the purpose of a hash table?**
+
+   - **Answer:** A hash table is used to implement an associative array abstract data type, where data is stored in key-value pairs. It provides efficient insertion, deletion, and retrieval of data.
+
+8. **Explain dynamic programming.**
+
+   - **Answer:** Dynamic programming is a technique to solve problems by breaking them into smaller overlapping subproblems and solving each subproblem only once, storing the results for future reference to avoid redundant computations.
+
+9. **What is a binary search tree (BST)?**
+
+   - **Answer:** A binary search tree is a binary tree data structure where each node has at most two children, and the key in each node is greater than or equal to all keys in its left subtree and less than all keys in its right subtree.
+
+10. **Discuss the concept of recursion.**
+
+    - **Answer:** Recursion is a programming technique where a function calls itself to solve a smaller instance of the same problem. It involves breaking down a problem into smaller subproblems and solving them recursively.
+
+11. **Explain the concept of a queue.**
+
+    - **Answer:** A queue is a linear data structure that follows the First In, First Out (FIFO) principle. It supports two primary operations: enqueue (to add an element to the rear) and dequeue (to remove the front element).
+
+12. **What is the difference between a stack and a queue?**
+
+    - **Answer:** The main difference lies in the order of operations. A stack follows the Last In, First Out (LIFO) principle, while a queue follows the First In, First Out (FIFO) principle.
+
+13. **Define a linked list and discuss its advantages and disadvantages.**
+
+    - **Answer:** A linked list is a data structure where elements are stored in nodes, and each node points to the next one. Advantages include dynamic size and easy insertion/deletion, but disadvantages include increased memory overhead and slower random access compared to arrays.
+
+14. **How does the quicksort algorithm work?**
+
+    - **Answer:** Quicksort is a sorting algorithm that follows the divide-and-conquer approach. It selects a pivot element and partitions the array into two subarrays, with elements less than the pivot on one side and elements greater than the pivot on the other. The process is then applied recursively.
+
+15. **Discuss the concept of a priority queue.**
+
+    - **Answer:** A priority queue is an abstract data type that supports inserting elements with associated priorities and extracting the element with the highest priority. It does not follow the strict FIFO or LIFO order.
+
+16. **What is the purpose of the Dijkstra's algorithm?**
+
+    - **Answer:** Dijkstra's algorithm is used to find the shortest path between two nodes in a weighted graph. It assigns tentative distances to nodes and updates them if a shorter path is found, ultimately determining the shortest paths.
+
+17. **Explain the concept of hashing and collision resolution.**
+
+    - **Answer:** Hashing is a technique used to map data to a fixed-size array (hash table) based on a hash function. Collision resolution deals with situations where two or more keys hash to the same location by employing methods like chaining or open addressing.
+
+18. **Describe the characteristics of a binary heap.**
+
+    - **Answer:** A binary heap is a complete binary tree that satisfies the heap property. In a max heap, the value of each node is greater than or equal to the values of its children; in a min heap, it is less than or equal to the values of its children.
+
+19. **How does the breadth-first search algorithm work?**
+
+    - **Answer:** Breadth-First Search (BFS) explores a graph level by level. It starts from a source node, visits all neighbors at the current depth before moving on to nodes at the next depth. It is often used for finding the shortest path in unweighted graphs.
+
+20. **Discuss the concept of an AVL tree.**
+
+    - **Answer:** An AVL tree is a self-balancing binary search tree where the balance factor of each node (the height difference between its left and right subtrees) is at most 1. Balancing operations are performed during insertion and deletion to maintain this property.
+
+21. **What is the purpose of a hash function in a hash table?**
+
+    - **Answer:** A hash function is used to map data of arbitrary size to a fixed-size array, generating a hash code. It ensures uniform distribution of keys across the array, minimizing collisions and facilitating efficient retrieval.
+
+22. **Explain the concept of a doubly linked list.**
+
+    - **Answer:** A doubly linked list is a linked list where each node contains a data element and two pointers, one pointing to the next node and another pointing to the previous node. This allows for easier traversal in both directions compared to a singly linked list.
+
+23. **How does the Merge Sort algorithm work?**
+
+    - **Answer:** Merge Sort is a divide-and-conquer algorithm. It divides the array into two halves, recursively sorts each half, and then merges the sorted halves to produce a sorted array. It has a time complexity of O(n log n).
+
+24. **Discuss the importance of a balanced tree.**
+
+    - **Answer:** A balanced tree, such as AVL or Red-Black trees, ensures that the height of the tree is logarithmic, resulting in efficient search, insertion, and deletion operations. Unbalanced trees can lead to performance degradation.
+
+25. **What is the significance of the Floyd-Warshall algorithm?**
+
+    - **Answer:** The Floyd-Warshall algorithm is used for all pairs shortest path in a weighted graph. It computes the shortest paths between all pairs of vertices, including intermediate vertices in the paths.
+
+26. **Define a circular queue and explain its advantages.**
+
+    - **Answer:** A circular queue is a variation of a regular queue where the last element is connected to the first element, forming a circular structure. Advantages include better space utilization and avoiding the need to shift elements during enqueue and dequeue operations.
+
+27. **How does the binary search algorithm work, and what are its prerequisites?**
+
+    - **Answer:** Binary search works on a sorted array by repeatedly dividing the search interval in half. Prerequisites include a sorted array and the ability to access elements by index.
+
+28. **Discuss the concept of in-order, pre-order, and post-order traversal in binary trees.**
+
+    - **Answer:** In-order traversal visits the left subtree, then the root, and finally the right subtree. Pre-order traversal visits the root, left subtree, and right subtree. Post-order traversal visits the left subtree, right subtree, and then the root.
+
+29. **What is the purpose of a spanning tree in a graph?**
+
+    - **Answer:** A spanning tree of a graph is a tree that includes all the vertices of the graph with the minimum possible number of edges. It is used in network design, ensuring connectivity without forming cycles.
+
+30. **Explain the concept of a trie.**
+
+    - **Answer:** A trie is a tree-like data structure used to store an associative array where the keys are usually strings. It allows for efficient retrieval and insertion operations with a time complexity proportional to the length of the key.
