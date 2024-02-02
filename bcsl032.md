@@ -1195,6 +1195,7 @@ int main() {
 
 # Viva
 
+```markdown
 1. **What is Object-Oriented Programming (OOP)?**
 
    - **Answer:** OOP is a programming paradigm that organizes data and behavior into reusable structures called objects. It emphasizes concepts like encapsulation, inheritance, and polymorphism.
@@ -1285,4 +1286,6 @@ int main() {
     - **Answer:** Static members belong to the class itself rather than instances of the class. They are shared among all instances and can be accessed using the class name. Instance members are specific to each object created from the class.
 
 20. **Explain the concept of a template in C++.**
+
     - **Answer:** Templates in C++ allow the creation of generic classes and functions that can work with different data types without having to rewrite the code. They provide a mechanism for generic programming.
+```
