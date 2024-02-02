@@ -1478,6 +1478,7 @@ int main() {
 
 # Viva
 
+```markdown
 1. **What is a data structure?**
 
    - **Answer:** A data structure is a way of organizing and storing data to perform operations efficiently.
@@ -1597,3 +1598,4 @@ int main() {
 30. **Explain the concept of a trie.**
 
     - **Answer:** A trie is a tree-like data structure used to store an associative array where the keys are usually strings. It allows for efficient retrieval and insertion operations with a time complexity proportional to the length of the key.
+```
