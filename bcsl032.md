@@ -1192,3 +1192,97 @@ int main() {
 }
 
 ```
+
+# Viva
+
+1. **What is Object-Oriented Programming (OOP)?**
+
+   - **Answer:** OOP is a programming paradigm that organizes data and behavior into reusable structures called objects. It emphasizes concepts like encapsulation, inheritance, and polymorphism.
+
+2. **Explain the four pillars of Object-Oriented Programming.**
+
+   - **Answer:**
+     - **Encapsulation:** It is the bundling of data and methods that operate on the data into a single unit or class.
+     - **Inheritance:** It allows a class to inherit properties and behavior from another class, promoting code reusability.
+     - **Polymorphism:** It enables a single interface to represent different types, allowing objects to be treated as instances of their parent class.
+     - **Abstraction:** It involves simplifying complex systems by modeling classes based on their essential features.
+
+3. **What is a class and object in C++?**
+
+   - **Answer:** A class is a blueprint or template for creating objects, while an object is an instance of a class. A class defines the properties and behaviors common to all objects of that type.
+
+4. **How is encapsulation implemented in C++?**
+
+   - **Answer:** Encapsulation is implemented in C++ by using access specifiers like private, protected, and public. Data members are often declared as private, and member functions provide controlled access to them.
+
+5. **Explain the concept of inheritance in C++.**
+
+   - **Answer:** Inheritance allows a class (derived or child class) to inherit properties and behaviors from another class (base or parent class). It promotes code reuse and establishes an "is-a" relationship between classes.
+
+6. **What is the difference between public, private, and protected access specifiers in C++?**
+
+   - **Answer:**
+     - **Public:** Members are accessible from outside the class.
+     - **Private:** Members are only accessible within the class.
+     - **Protected:** Members are accessible within the class and its derived classes.
+
+7. **What is polymorphism? Explain runtime and compile-time polymorphism in C++.**
+
+   - **Answer:** Polymorphism allows objects of different types to be treated as objects of a common type.
+     - **Runtime Polymorphism:** Achieved through function overloading and virtual functions. Resolved at runtime using late binding.
+     - **Compile-time Polymorphism:** Achieved through function overloading and operator overloading. Resolved at compile time using early binding.
+
+8. **What is an abstract class?**
+
+   - **Answer:** An abstract class is a class that cannot be instantiated and may contain abstract methods. It serves as a blueprint for other classes and is meant to be subclassed.
+
+9. **Explain the difference between shallow copy and deep copy.**
+
+   - **Answer:**
+     - **Shallow Copy:** Copies the values of the members, including pointers. The memory addresses pointed by the pointers are not duplicated.
+     - **Deep Copy:** Creates a new object with a new set of members and duplicates the memory pointed by the pointers, ensuring the original and the copy are independent.
+
+10. **How are friend functions used in C++?**
+
+    - **Answer:** Friend functions are functions that are not members of a class but are granted access to its private and protected members. They are declared using the `friend` keyword in the class declaration.
+
+11. **What is a constructor and destructor in C++?**
+
+    - **Answer:**
+      - **Constructor:** A special member function that gets called when an object is created. It initializes the object's data members and can be overloaded.
+      - **Destructor:** A special member function that gets called when an object goes out of scope or is explicitly deleted. It cleans up resources allocated by the object and can also be overloaded.
+
+12. **Explain the concept of function overloading.**
+
+    - **Answer:** Function overloading allows multiple functions with the same name but different parameter lists to coexist in the same scope. The compiler determines the appropriate function to call based on the number and types of arguments provided.
+
+13. **What is the purpose of the `this` pointer in C++?**
+
+    - **Answer:** The `this` pointer is a pointer that points to the object for which the member function is called. It is used to differentiate between the object's data members and local variables with the same name.
+
+14. **How is polymorphism achieved through function overloading?**
+
+    - **Answer:** Polymorphism through function overloading involves defining multiple functions with the same name but different parameter lists. The appropriate function is selected at compile time based on the number and types of arguments used in the function call.
+
+15. **What is a virtual function? How does it contribute to runtime polymorphism?**
+
+    - **Answer:** A virtual function is a function declared in a base class with the `virtual` keyword and is meant to be overridden by derived classes. It allows the appropriate function to be called at runtime based on the actual type of the object, contributing to runtime polymorphism.
+
+16. **What is an interface in C++?**
+
+    - **Answer:** In C++, an interface is a class with only pure virtual functions. It provides a way to achieve abstraction and is meant to be inherited by other classes, which must implement the pure virtual functions.
+
+17. **Explain the concept of multiple inheritance in C++.**
+
+    - **Answer:** Multiple inheritance in C++ allows a class to inherit from more than one base class. It enables a derived class to have the properties and behaviors of multiple classes, leading to complex class hierarchies.
+
+18. **What is the difference between function overloading and operator overloading?**
+
+    - **Answer:** Function overloading involves defining multiple functions with the same name but different parameter lists, while operator overloading involves defining how operators behave with user-defined types. Operator overloading is achieved by defining special member functions such as `operator+`, `operator-`, etc.
+
+19. **How are static members different from instance members in a class?**
+
+    - **Answer:** Static members belong to the class itself rather than instances of the class. They are shared among all instances and can be accessed using the class name. Instance members are specific to each object created from the class.
+
+20. **Explain the concept of a template in C++.**
+    - **Answer:** Templates in C++ allow the creation of generic classes and functions that can work with different data types without having to rewrite the code. They provide a mechanism for generic programming.
