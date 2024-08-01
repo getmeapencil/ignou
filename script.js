@@ -2,14 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initialize Showdown.js
   const converter = new showdown.Converter();
   // Define a variable to hold the file path based on the current page
-  let markdownFilePath;
-
-  // Determine the file path based on the current page
-  if (currentPageIsCpp()) {
-    markdownFilePath = "./bcsl032.md";
-  } else {
-    markdownFilePath = "./bcsl033.md";
-  }
+  let markdownFilePath = convertString(window.location.pathname);
+  console.log("markdownFilePath:", markdownFilePath);
 
   // Fetch Markdown content from an external file
   fetch(markdownFilePath)
@@ -28,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => console.error("Error fetching Markdown content:", error));
 
-  function currentPageIsCpp() {
-    return window.location.pathname === "/c++.html";
+  function convertString(input) {
+    return input.replace(/^\//, "./").replace(/\.html$/, ".md");
   }
 });
