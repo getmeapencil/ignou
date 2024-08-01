@@ -45,3 +45,7 @@ footer {
   flex-direction: column;
   gap: 10px;
 }
+
+h4 {
+  color: black;
+}
