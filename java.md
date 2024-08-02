@@ -744,3 +744,96 @@ for (String item : list) {
 
 **Answer:** A functional interface is an interface with only one abstract method. It can be implemented using lambda expressions, method references, or anonymous classes.  
 **Example:** `@FunctionalInterface interface MyFunctionalInterface { void myMethod(); }`
+
+# Practical
+
+To create a Java applet that converts lengths from centimeters to inches using proper GUI components and layout, follow these steps:
+
+1. **Set up the applet environment**.
+2. **Create GUI components** for input, conversion, and output.
+3. **Implement the conversion logic**.
+4. **Add event handling** for the button to perform the conversion when clicked.
+
+Here's a complete example of a Java applet that performs the described task:
+
+```java
+import java.applet.Applet;
+import java.awt.*;
+import java.awt.event.*;
+
+public class LengthConverterApplet extends Applet implements ActionListener {
+    TextField cmField;
+    TextField inchField;
+    Button convertButton;
+
+    @Override
+    public void init() {
+        // Set layout for the applet
+        setLayout(new GridLayout(3, 2));
+
+        // Create GUI components
+        Label cmLabel = new Label("Centimeters: ");
+        cmField = new TextField();
+
+        Label inchLabel = new Label("Inches: ");
+        inchField = new TextField();
+        inchField.setEditable(false); // Make the inches field read-only
+
+        convertButton = new Button("Convert");
+
+        // Add action listener to the button
+        convertButton.addActionListener(this);
+
+        // Add components to the applet
+        add(cmLabel);
+        add(cmField);
+        add(inchLabel);
+        add(inchField);
+        add(convertButton);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == convertButton) {
+            try {
+                // Get input from the cmField
+                double cm = Double.parseDouble(cmField.getText());
+
+                // Convert centimeters to inches
+                double inches = cm / 2.54;
+
+                // Set the result in the inchField
+                inchField.setText(String.format("%.2f", inches));
+            } catch (NumberFormatException ex) {
+                inchField.setText("Invalid input");
+            }
+        }
+    }
+}
+```
+
+### Explanation:
+
+1. **Layout and GUI components**:
+
+   - The applet uses a `GridLayout` with 3 rows and 2 columns.
+   - It contains labels and text fields for both centimeters and inches.
+   - A button is included to trigger the conversion.
+
+2. **Event Handling**:
+   - The `convertButton` is linked to an action listener, which performs the conversion when clicked.
+   - The `actionPerformed` method handles the conversion logic, reading the input from the `cmField`, converting it to inches, and displaying the result in the `inchField`.
+   - If the input is invalid (i.e., not a number), an error message is displayed in the `inchField`.
+
+To run this applet, you'll need to create an HTML file to embed it, like this:
+
+```html
+<html>
+  <body>
+    <applet code="LengthConverterApplet.class" width="300" height="150">
+    </applet>
+  </body>
+</html>
+```
+
+Place the HTML file and the compiled `LengthConverterApplet.class` file in the same directory and open the HTML file in a browser that supports Java applets (Note: modern browsers no longer support Java applets directly, so you'll need to use an older browser or an applet viewer for testing).
