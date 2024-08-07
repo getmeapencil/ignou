@@ -15,7 +15,7 @@ body {
   color: #fff; /* Set the dark mode text color */
 }
 nav {
-  height: 100vh;
+  height: 50vh;
   display: grid;
   grid-template-columns: auto auto auto auto;
   place-items: center;
